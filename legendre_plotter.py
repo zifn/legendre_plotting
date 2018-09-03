@@ -6,6 +6,10 @@ Created on Sat Sep  1 23:29:42 2018
 A script to plot the line graph form of a function only works for monotonic 
 functions, functions with multiple solutions are hard for sympy to solve nicely
 """
+import sympy as sp
+import numpy as np
+import matplotlib.pyplot as plt
+
 YMIN = -20
 YMAX = 20
 XMIN = -15
@@ -13,10 +17,6 @@ XMAX = 15
 NUMB_LINES = 20
 SLOPE_MIN = -4
 SLOPE_MAX = 4
-
-import sympy as sp
-import numpy as np
-import matplotlib.pyplot as plt
 
 def plot_results(x, y):
     plt.plot(x, y)
