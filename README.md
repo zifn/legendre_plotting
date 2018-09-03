@@ -20,6 +20,7 @@ SLOPE_MAX = 4
 global parameters that can be adjusted to change the window, number of lines, and range of slopes plotted 
 
 ## Sample Output
+output of the script using the function $x\ln(x)$ with the first image being a plot of the function. The second being a plot of the collection of tangent lines, and the third being a plot of both.
 
 ![Alt text](sample/xlnx_point.png?raw=true "xln(x) point representation")
 
