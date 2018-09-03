@@ -6,12 +6,12 @@ Created on Sat Sep  1 23:29:42 2018
 A script to plot the line graph form of a function only works for monotonic 
 functions, functions with multiple solutions are hard for sympy to solve nicely
 """
-YMIN = -2
-YMAX = 3
-XMIN = -.1
-XMAX = 4
+YMIN = -20
+YMAX = 20
+XMIN = -15
+XMAX = 15
 NUMB_LINES = 20
-SLOPE_MIN = 0.3 
+SLOPE_MIN = -4
 SLOPE_MAX = 4
 
 import sympy as sp
@@ -26,7 +26,7 @@ def plot_results(x, y):
 def main():
     # Make symbolic expression and compute legendre transform
     x, p = sp.symbols("x p")
-    y = sp.log(x) # Modify this line to plot your own function
+    y = (1/10)*x**2 # Modify this line to plot your own function
     y_prime = sp.diff(y, x)
     x_to_p_substitution = sp.solve(y_prime - p, x, dict=True)
     phi = y - x*y_prime
